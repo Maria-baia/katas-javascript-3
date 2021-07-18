@@ -1,11 +1,16 @@
+const conteudo = document.getElementById("conteudo")
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 function showResults(){
-    const conteudo = document.getElementById("conteudo")
     const newElement = document.createElement("span");
     newElement.className = "kata";
     conteudo.appendChild(newElement)
     const newText = document.createTextNode(i + " ");
     newElement.appendChild(newText);
+}
+
+function br(){
+    const space = document.createElement("hr")
+    conteudo.appendChild(space)
 }
 function kata1() {
     const array = []
@@ -13,8 +18,10 @@ function kata1() {
         array.push(i)
         showResults()
     }
+    br()
     return array.join(", ")
 }
+kata1()
 
 function kata2() {
     const array = []
@@ -22,8 +29,10 @@ function kata2() {
         array.push(i)
         showResults()
     }
+    br()
     return array.join(", ")
 }
+kata2()
 
 function kata3() {
     const array = []
@@ -31,8 +40,10 @@ function kata3() {
         array.push(i)
         showResults()
     }
+    br()
     return array.join(", ")
 }
+kata3()
 
 function kata4() {
     const array = []
@@ -40,8 +51,10 @@ function kata4() {
         array.push(i)
         showResults()
     }
+    br()
     return array.join(", ")
 }
+kata4()
 
 function kata5() {
     const array = []
@@ -51,8 +64,10 @@ function kata5() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata5()
 
 function kata6() {
     const array = []
@@ -62,8 +77,10 @@ function kata6() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata6()
 
 function kata7() {
     const array = []
@@ -73,8 +90,10 @@ function kata7() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata7()
 
 function kata8() {
     const array = []
@@ -84,8 +103,10 @@ function kata8() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata8()
 
 function kata9() {
     const array = []
@@ -95,16 +116,20 @@ function kata9() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata9()
 
 function kata10() {
     for(j=0; j<sampleArray.length; j++) {
         i = sampleArray[j]
         showResults()
     }
+    br()
     return sampleArray.join(", ")
 }
+kata10()
 
 function kata11() {
     const array = []
@@ -115,8 +140,10 @@ function kata11() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata11()
 
 function kata12() {
     const array = []
@@ -127,8 +154,10 @@ function kata12() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata12()
 
 function kata13() {
     const array = []
@@ -139,8 +168,10 @@ function kata13() {
             showResults()
         }
     }
+    br()
     return array.join(", ")
 }
+kata13()
 
 function kata14() {
     const array = []
@@ -149,8 +180,10 @@ function kata14() {
             i = sampleArray[j] * sampleArray[j]
             showResults()
     }
+    br()
     return array.join(", ")
 }
+kata14()
 
 function kata15() {
     let soma = 0
@@ -159,8 +192,10 @@ function kata15() {
     }
     i = soma
     showResults()
+    br()
     return soma
 }
+kata15()
 
 function kata16() {
     let soma = 0
@@ -169,8 +204,10 @@ function kata16() {
     }
     i = soma
     showResults()
+    br()
     return soma
 }
+kata16()
 
 function kata17() {
     let menor = 9096
@@ -181,8 +218,10 @@ function kata17() {
     }
     i = menor
     showResults()
+    br()
     return menor
 }
+kata17()
 
 function kata18() {
     let maior = 0
@@ -193,8 +232,10 @@ function kata18() {
     }
     i = maior
     showResults()
+    br()
     return maior
 }
+kata18()
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
@@ -211,7 +252,9 @@ function kataBonus1() {
         const space = document.createElement("br")
         conteudo.appendChild(space)
     }
+    br()
 }
+kataBonus1()
 
 function kataBonus2() {
     let i=0
@@ -228,7 +271,9 @@ function kataBonus2() {
         i++
         j+=5
     }
+    br()
 }
+kataBonus2()
 
 function kataBonus3() {
     let i=0
@@ -244,7 +289,9 @@ function kataBonus3() {
         conteudo.appendChild(space)
         i++
     }
+    br()
 }
+kataBonus3()
 
 function kataBonus4() {
     let i=0
@@ -263,7 +310,9 @@ function kataBonus4() {
         conteudo.appendChild(space)
         i++
     }
+    br()
 }
+kataBonus4()
 
 function kataBonus5() {
     let i=0
@@ -282,4 +331,6 @@ function kataBonus5() {
         conteudo.appendChild(space)
         i++
     }
+    br()
 }
+kataBonus5()
